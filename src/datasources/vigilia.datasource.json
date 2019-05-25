@@ -1,0 +1,11 @@
+{
+  "name": "vigilia",
+  "connector": "mongodb",
+  "url": "",
+  "host": "localhost",
+  "port": 27017,
+  "user": "vigilia",
+  "password": "vigilia",
+  "database": "vigilia",
+  "useNewUrlParser": true
+}

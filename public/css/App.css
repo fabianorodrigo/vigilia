@@ -1,0 +1,276 @@
+@media print {
+  td {
+    /* add this line for better support in chrome */ 
+    -webkit-print-color-adjust:exact;
+  }
+}
+
+.App {
+  text-align: center;
+}
+.App.disabled
+{
+  pointer-events: none;
+
+  /* for "disabled" effect */
+  opacity: 0.5;
+  background: #CCC;
+}
+
+.App-logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  float: left;
+  height: 60px;
+}
+.App-login{
+  width: 40%;
+  margin: 0 auto;
+}
+.btNovaFicha{
+  position: absolute;
+  top: 75px;
+}
+
+.App-header {
+  background-color: whitesmoke;
+  height: 70px;
+  padding: 2px;
+  color:#337ab7;
+  border-bottom: solid 4px #337ab7;
+}
+.comentariosFichas{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+/*#wrap {
+    overflow: auto;
+    height: 800px;
+}*/
+.barraFerramentas{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+a{
+  color: darkgreen;
+}
+
+.link{
+  color: darkgreen;
+}
+
+.inputDate{
+  width: 135px;
+}
+
+.iconButton{ float:right; width: 16px; height: 16px}
+
+th{
+  background-color: darkgreen;
+  border: 1px solid #ccc;
+}
+.th-180{
+  width: 180px;
+}
+.th-form{
+  background-color: #5cb85c;
+  border: 1px solid #ccc;
+}
+.th-form-50{
+  background-color: #5cb85c;
+  border: 1px solid #ccc;
+  width: 50px;
+}
+.th-form-85{
+  background-color: #5cb85c;
+  border: 1px solid #ccc;
+  width: 85px;
+}
+.th-form-110{
+  background-color: #5cb85c;
+  border: 1px solid #ccc;
+  width: 110px;
+}
+.th-form-180{
+  background-color: #5cb85c;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+.th-dias-intermediarios{
+  background-color: #ddd;
+  font-size: 10px;
+  text-align: center;
+}
+.th-lateral{
+  background-color: #7CCD7C;
+  width: 150px;
+  color: black;
+  font-weight: normal;
+}
+.th-intermediaria{
+  background-color: #7CCD7C;
+  color: black;
+  font-weight: normal;
+}
+
+.tr-linha-sprint-suspensa{
+  background-color: #f1f1ab;
+}
+
+.tr-linha-impar{
+  background-color:#f2f2f2;
+}
+.th-uteis{
+  font-size: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.th-uteisth-dias-intermediarios{
+  background-color: #ddd;
+  font-size: 10px;
+  text-align: center;
+  color: #404040;
+}
+.th-fds{
+  background-color: #404040;
+  color: grey;
+  font-size: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.th-fdsth-dias-intermediarios{
+  background-color:  #ccc;
+  color: grey;
+  font-size: 10px;
+  text-align: center;
+}
+.th-semana-atual{
+  font-size: 10px;
+  text-align: center;
+  color: orange;
+}
+.th-semana-atualth-dias-intermediarios{
+  background-color: #ddd;
+  font-size: 10px;
+  text-align: center;
+  color: orange;
+}
+.thDimensao{
+  width:190px;
+  white-space: nowrap;
+}
+.ferias{
+  background-color: black;
+  color: yellow;
+  font-weight: bold;
+}
+.ul-atividades{
+  padding-left:15px;
+}
+.ul-alertas{
+  text-align: left;
+  padding-left:15px;
+}
+.alerta-ausencia{
+  background-color: red;
+}
+.tab-content{
+   border-left: 1px solid #ddd;
+   padding: 5px
+}
+.tab-content-form{
+   border: 1px solid #ccc;
+}
+.sprint {
+  margin-bottom: 5px;
+  background-color: #faebcc;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  width: 200px;
+  color: black;
+  font-weight: normal;
+  font-size: 12px;
+  float: left;
+  margin: 3px;
+}
+
+.sprint-heading {
+  padding: 3x 3px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-weight: bold;
+  color: black;
+  background-color:  #f0ad4e;
+  border-color: #faebcc;
+}
+.sprint-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: inherit;
+}
+.cabecalho-sprint-form{
+  background-color: #5cb85c;
+  color: white;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.App-body {
+  text-align: left;
+  padding: 10px;
+}
+.Table-tables{
+  width: 40%;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+.Table-tables-bordered{
+  border: 1px solid #ddd;
+}
+
+.modal-message-info{
+  padding: 15px;
+  color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #337ab7;
+  border-color: #4081bb;
+}
+
+.modal-message-error{
+  padding: 15px;
+  color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+
+.modal-md {
+    width: 750px !important;
+}
+
+h6 {
+    display: block;
+    margin: 0px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
