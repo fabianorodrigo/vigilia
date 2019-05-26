@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function FormFornecedorModal() {
+export default function FormFornecedorModal() {
   const classes = useStyles();
   const [values, setValues] = React.useState({
     cnpj: '',
@@ -82,5 +82,3 @@ function FormFornecedorModal() {
     </div>
   );
 }
-
-export default FormFornecedorModal;

@@ -8,14 +8,16 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import IconButton from '@material-ui/core/IconButton';
 import Avatar from '@material-ui/core/Avatar';
-import pink from '@material-ui/core/colors/pink';
-import green from '@material-ui/core/colors/green';
-import blue from '@material-ui/core/colors/blue';
 import Typography from '@material-ui/core/Typography';
 import EditIcon from '@material-ui/icons/EditTwoTone';
 import FileCopyIcon from '@material-ui/icons/FileCopyTwoTone';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCartTwoTone';
 
+import pink from '@material-ui/core/colors/pink';
+import green from '@material-ui/core/colors/green';
+import blue from '@material-ui/core/colors/blue';
+
+//import useStyles from './styles';
 import {formataCNPJ} from '../lib/utils';
 import {Service} from '../lib/service';
 
@@ -45,7 +47,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function FornecedoresList() {
+export default function FornecedoresList() {
   const classes = useStyles();
 
   //Buscando fornecedores
@@ -65,12 +67,13 @@ function FornecedoresList() {
   ];
   let indexAvatarClass = 0;
   return (
-    <List className={classes.root}>
+    <List className={classes.rootContainer}>
       {fornecedores.map(f => {
         indexAvatarClass += 1;
         if (indexAvatarClass >= avatarClasses.length) {
           indexAvatarClass = 0;
         }
+        console.log(avatarClasses, indexAvatarClass);
         return (
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
@@ -114,5 +117,3 @@ function FornecedoresList() {
     </List>
   );
 }
-
-export default FornecedoresList;

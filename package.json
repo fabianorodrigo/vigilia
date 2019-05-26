@@ -32,7 +32,7 @@
     "prestart": "npm run build",
     "start": "node .",
     "prepublishOnly": "npm run test",
-    "webpack": "webpack"
+    "webpack": "webpack -w"
   },
   "repository": {
     "type": "git"
@@ -62,8 +62,7 @@
     "babel-polyfill": "^6.26.0",
     "loopback-connector-mongodb": "^4.2.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "typeface-roboto": "0.0.54"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
