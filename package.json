@@ -58,7 +58,7 @@
     "@loopback/service-proxy": "^1.1.10",
     "@material-ui/core": "^4.0.0-rc.0",
     "@material-ui/icons": "^4.0.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.26.0",
     "loopback-connector-mongodb": "^4.2.0",
     "react": "^16.8.6",
